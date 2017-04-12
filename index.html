@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Food Box</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Food Box</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Login</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center red-text text-lighten-1">Food Box</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Ingredients with Recipes, in a Box, for ANY number of people, from ANY culture.</h5>
+        </div>
+        <div class="row center">
+          <a href="#place-order" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Order Now</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-2"><i class="material-icons">language</i></h2>
+            <h5 class="center">Multicultural</h5>
+
+            <p class="light">
+              Feel like trying food from cultures you are not familiar with?
+              We got you covered. We offer cuisines from 10^26 cultures, you 
+              will never get tired of our boxes. Can't decide what you want? 
+              Use our random cuisine generator!  
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-2"><i class="material-icons">group</i></h2>
+            <h5 class="center">Flexible Portions</h5>
+
+            <p class="light">
+              Order a box for one, order a box for two. 
+              Tell us the number of people dining, and we will sort it out.
+              Want leftovers for tomorrow? Order for a few more. It's as easy as that!
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-2"><i class="material-icons">playlist_add_check</i></h2>
+            <h5 class="center">Detailed Instructions</h5>
+
+            <p class="light">
+              We have provided detailed instructions as well as online videos to help 
+              people new to the culture start cooking. If you need additional assistance, 
+              we have online video sessions to teach you one-on-one!
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">An experience you will not regret, and experience you will never forget.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <a name="place-order"></a>
+          <h4>Place Order</h4>
+          <p class="center-align light">
+            Place your order below, then wait, learn, cook, and enjoy.
+          </p>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose a Cuisine</option>
+              <option value="1">Indian</option>
+              <option value="2">German</option>
+              <option value="3">American</option>
+              <option value="4">Random</option>
+            </select>
+            <label>Cuisine Select</label>
+          </div>
+          <br>
+          <div class="input-field col s12 m6">
+            <p class="left-align">Number of people:</p>
+            <input placeholder="How many are dining?" id="first_name" type="text">
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Special Requests (e.g. No cheese)</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <a class="waves-effect waves-light btn red" onclick="Materialize.toast('Ordered!', 4000)">Place Order</a>
+                
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A new way to explore new cultures, just with one click.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer red">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Food Box</h5>
+          <p class="grey-text text-lighten-4">
+            We are startup based in Shanghai, China. We are team of 
+            college students working on this for the course
+            Startups in the Global Culture and Context.
+          </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">About us</h5>
+          <ul>
+            <li><a class="white-text" href="http://www.sandershi.com">Sander Shi</a></li>
+            <li><a class="white-text" href="#!">Guillaume Moesching</a></li>
+            <li><a class="white-text" href="#!">Peter Wu</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">References</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Startups in the Global Culture and Context</a></li>
+            <li><a class="white-text" href="#!">Vera Schulz</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Sander Shi, Guillaume Moesching and Peter Wu. 
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
